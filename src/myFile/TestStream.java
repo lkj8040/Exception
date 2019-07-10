@@ -1,12 +1,13 @@
 package myFile;
-import java.io.File;//ÎÄ¼ş¶ÔÏó,±¾Éí²»Ìá¹©¶ÁĞ´·½·¨
-import java.io.IOException;//ÊäÈëÊä³öÒì³£¶ÔÏó
-import java.io.FileInputStream;//ÊäÈëÁ÷¶ÔÏó
-import java.io.FileOutputStream;//Êä³öÁ÷¶ÔÏó
+import java.io.File;//æ–‡ä»¶å¯¹è±¡,æœ¬èº«ä¸æä¾›è¯»å†™æ–¹æ³•
+import java.io.IOException;//è¾“å…¥è¾“å‡ºå¼‚å¸¸å¯¹è±¡
+import java.io.FileInputStream;//è¾“å…¥æµå¯¹è±¡
+import java.io.FileOutputStream;//è¾“å‡ºæµå¯¹è±¡
 public class TestStream {
 	public static void main(String[] args) {
 		
 		try{
+			//å°†æºæ–‡ä»¶æ‹†åˆ†æˆkä¸ªå­æ–‡ä»¶
 			File myfile = new File("d:/LOLfolder/eclipse.exe");
 			byte []a = new byte[(int)myfile.length()];
 			FileInputStream fis = new FileInputStream(myfile);
